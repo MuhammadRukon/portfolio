@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer gap-6 absolute footer-center py-5 bg-[rgb(0,0,0,0.6)] text-base-content rounded">
+    <footer className="footer gap-6 absolute footer-center p-5 bg-[rgb(0,0,0,0.6)] text-base-content rounded">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a href="https://twitter.com/muhammadRukon2" target="#">

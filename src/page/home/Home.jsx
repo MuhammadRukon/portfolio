@@ -5,6 +5,7 @@ import Projects from "../../components/project/Projects";
 import Education from "../../components/education/Education";
 import Achivement from "../../components/achivement/Achivement";
 import Container from "../../components/container/Container";
+import Contact from "../../components/contact/Contact";
 const Home = () => {
   return (
     <>
@@ -12,15 +13,9 @@ const Home = () => {
       <Container>
         <Skills />
         <Projects />
-        <div className="flex justify-center mt-20 items-center">
-          <div className="flex-1">
-            <Education />
-          </div>
-          <div className="w-[2px] min-h-[150px] bg-slate-900"></div>
-          <div className="flex-1">
-            <Achivement />
-          </div>
-        </div>
+        <Education />
+        <Achivement />
+        <Contact />
       </Container>
     </>
   );

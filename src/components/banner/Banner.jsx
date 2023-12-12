@@ -37,7 +37,7 @@ const Banner = () => {
             science and engineering at Daffodil Institute of IT, striving to
             become a full-stack web developer.
           </p>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 relative items-center">
             <a href="https://www.linkedin.com/in/muhammadrukon/" target="#">
               <FaLinkedin size={40} color="#0077B5" />
             </a>
@@ -55,16 +55,16 @@ const Banner = () => {
               </motion.div>
               <p className="font-robotoCondensed">Have a look</p>
             </div>
-          </div>
-          <div className="absolute top-[85vh]">
-            <motion.div
-              initial={{ y: 0 }}
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
-            >
-              <p>view more</p>
-              <FaChevronDown size={24} />
-            </motion.div>
+            <div className="absolute -bottom-40 lg:-bottom-60">
+              <motion.div
+                initial={{ y: 0 }}
+                animate={{ y: [-10, 10, -10] }}
+                transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+              >
+                <p>view more</p>
+                <FaChevronDown size={24} />
+              </motion.div>
+            </div>
           </div>
         </div>
         <div className="absolute right-0 -z-10 top-20 sm:top-5 lg:top-20">

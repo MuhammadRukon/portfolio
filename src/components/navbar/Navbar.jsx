@@ -1,25 +1,47 @@
 import React from "react";
 import Container from "../container/Container";
 import Resume from "../../assets/Muhammads-Resume-Front-End-Developer.pdf";
+import { Link } from "react-router-dom";
+import Fav from "../../../public/fav.png";
 
 const navlinks = (
   <>
     <li>
-      <a className="font-bold text-base nav-item transition-all">Skills</a>
+      <a href="#skills" className="font-bold text-base nav-item transition-all">
+        Skills
+      </a>
     </li>
     <li>
-      <a className="font-bold text-base nav-item transition-all">Projects</a>
+      <a
+        href="#projects"
+        className="font-bold text-base nav-item transition-all"
+      >
+        Projects
+      </a>
     </li>
     <li>
-      <a className="font-bold text-base nav-item transition-all">Education</a>
+      <a
+        href="#education"
+        className="font-bold text-base nav-item transition-all"
+      >
+        Education
+      </a>
     </li>
     <li>
-      <a className="font-bold text-base nav-item transition-all">
+      <a
+        href="#achievements"
+        className="font-bold text-base nav-item transition-all"
+      >
         Achievements
       </a>
     </li>
     <li>
-      <a className="font-bold text-base nav-item transition-all">Contact</a>
+      <a
+        href="#contact"
+        className="font-bold text-base nav-item transition-all"
+      >
+        Contact
+      </a>
     </li>
   </>
 );
@@ -52,7 +74,9 @@ const Navbar = () => {
               {navlinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-robotoCondensed">Muhammad</a>
+          <Link to="/" className=" text-xl font-robotoCondensed">
+            <img className="w-16" src={Fav} alt="" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>
